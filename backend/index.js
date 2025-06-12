@@ -27,7 +27,7 @@ const io = new Server(server, {
 
 // MongoDB connection
 mongoose.connect(process.env.MONGODB_URI)
-    .then(() => console.log("✅ MongoDB connected"))
+    .then(() => console.log("✅ MongoDB connected successfully"))
     .catch((err) => console.error("❌ MongoDB error:", err));
 
 // Socket.IO logic

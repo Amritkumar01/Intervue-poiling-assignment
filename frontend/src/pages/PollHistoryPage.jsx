@@ -8,7 +8,7 @@ const PollHistoryPage = () => {
     useEffect(() => {
         const fetchHistory = async () => {
             try {
-                const res = await axios.get("https://intervue-poiling-assignment-backend.vercel.app/api/polls/history");
+                const res = await axios.get("https://intervue-poiling-assignment-backend.onrender.com/api/polls/history");
                 setPollHistory(res.data); // Make sure this matches your backend response
             } catch (err) {
                 console.error("Failed to fetch poll history", err);
